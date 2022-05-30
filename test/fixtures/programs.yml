@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  university: one
+  name: MyString
+  description: MyText
+  beca: MyString
+
+two:
+  university: two
+  name: MyString
+  description: MyText
+  beca: MyString

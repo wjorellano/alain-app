@@ -1,0 +1,30 @@
+<!-- <div >
+  <p>
+    <strong>Name:</strong>
+  </p>
+  
+  <p>
+    <strong>Country:</strong>
+    <%= university.country %>
+  </p>
+  
+</div>
+<%= university.name %> -->
+<tr>
+  
+  <td>
+    <%= university.name %>
+      </td>
+      <td>
+        <%= university.country %>
+      </td>
+      <td>
+      <%= link_to "mostrar esta universidad", university, class:"link" %>
+      </td>
+      <td>
+      <%= link_to "Editar esta universidad", edit_university_path(university), class:"link" %>
+      </td>
+      <td>
+        <%= link_to "Programas", university_programs_path(university)%>
+      </td>
+    </tr>

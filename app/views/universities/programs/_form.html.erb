@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <div class="card shadow-md">
+    <div class="card-body">
+      <%= simple_form_for [@university, @program] do |f| %>
+        <%# f.association :university %>
+        <%= f.input :name %>
+        <%= f.input :description %>
+        <div class="mt-2">
+          <%= f.submit "Crear programa", class:"btn btn-primary btn-lg w-full" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

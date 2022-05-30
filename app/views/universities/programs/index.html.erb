@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Programs</h1>
+
+<div id="programs">
+  <% @programs.each do |program| %>
+    <%= render program %>
+    <p>
+      <%= link_to "Show this program", university_program_path(@university, program), class:"link" %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New program", new_university_program_path, class:"link" %><br><br>
+<%= link_to "universidades", universities_path, class:"link" %>

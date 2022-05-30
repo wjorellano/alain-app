@@ -1,0 +1,29 @@
+<!-- <p style="color: green"><%= notice %></p>
+
+<h1>Universities</h1>
+
+<div id="universities">
+  <p>
+  </p>
+</div>
+
+<%= link_to "New university", new_university_path %> -->
+<div class="mt-4">
+  <h1 class="mt-4 title">Universidades de todo el mundo</h1>
+</div>
+<div class="container mt-8">
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Mostrar</th>
+        <th>Editar</th>
+        <th>Ver Programas</th>
+      </tr>
+    </thead>
+    <tbody>
+        <%= render @universities %>
+    </tbody>
+  </table>
+</div>
